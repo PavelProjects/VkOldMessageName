@@ -1,0 +1,17 @@
+{
+    "manifest_version":2,
+    "name": "VkOldMessageName",
+    "description": "Vk developers are idiots",
+    "version": "1.0",
+    "permissions": [
+    "tabs","declarativeContent","activeTab"
+    ],
+    "content_scripts": [
+        {
+        "matches": [
+            "*://vk.com/*"],
+        "js": ["background.js"],
+        "run_at": "document_idle"
+        }      
+    ]
+}
